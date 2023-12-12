@@ -1,0 +1,38 @@
+h1{
+    font-family: kalam;
+    color: green;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+button{
+    margin-top: 30px;
+    font-family: kalam;
+    background-color: rgb(93, 241, 93) !important;
+}
+
+#kirumasWish{
+    font-family: Rubik Bubbles;
+    font-size: 100px;
+    display: none;
+}
+
+button:hover{
+    background-color: red !important;
+}
+
+#error{
+    color: red;
+    font-weight: 600;
+}
+
+input{
+    border-radius: 4px;
+    padding: 10px;
+}
+
+@media(max-width:800px){
+    #kirumasWish{
+        font-size: 50px;
+    }
+}
