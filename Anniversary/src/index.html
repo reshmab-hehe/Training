@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<style>
+    .red{
+        color: red;
+    }
+
+    .whole-container{
+        background-color: rgb(213, 202, 223);
+    }
+    .content-div{
+        text-align: center;
+    }
+    /* .full-container{
+        background-color: rgb(236, 176, 176);
+    } */
+    .buttons{
+        background-color: rgb(4, 138, 138);
+    }
+    /* .response-div{
+        text-align: center;
+        background-color: beige;
+    } */
+    .form-div{
+        align-items: center;
+        display: none;
+    }
+    .forms{
+        display: none;
+    }
+</style>
+<body>
+    
+    <div class="container p-5 whole-container">
+        <div class="row full-container" >
+            <div class="col-md-12 content-div mt-5 mb-5">
+                <h1>Hellooo Aadithhhhhhhhh</h1>
+                <h3><span class="red">Happy 4 years </span>HeHeHe</h3>
+                <h4 class="mt-5">
+Do you love meeeeeeeeeeeeeeee???
+                </h4>
+                <button class="btn buttons yes-btn">
+                    Yes : )
+                </button>
+                <button class="btn buttons no-btn">No : (</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 response-div m-5">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-div m-2">
+<h5>Ok, Now I do have some questions for you.</h5>
+<button  class="btn buttons click-btn">Click here to see my questions</button>
+            </div>
+        </div>
+        <div class="forms">
+        <form class="form" id="webForm" action="#" method="post">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5 px-0">
+                        <label for="name">So tell me the date and the year I told that I lub u<span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-7 px-0">
+                        <input type="date" id="name" name="name" class="required form-control" required>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5 px-0">
+                        <label for="birthdate">My birth date<span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-7 px-0">
+                        <input type="date" id="dob" name="dob" placeholder="YYYY-MM-DD" class="required form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5 px-0">
+                        <label for="kissFirst">Date we kissed for the first time<span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-7 px-0">
+                        <input type="date" id="kissFirst" name="kissFirst" class="required form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5 px-0">
+                        <label class="textarea-label" for="kiss">Date we kissed for the last time<span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-7 px-0">
+                        <input type="date" id="kiss" name="kiss" spellcheck="false" class="required form-control" required></input>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5 px-0">
+                        <label for="movie">Our first movie date<span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-7 px-0">
+                        <input type="date" id="movie" name="movie" class="required form-control" required>
+                    </div>
+                </div>
+            </div>
+                <div class="form-group text-right mr-0 pr-0">
+                    <button id="submit" type="submit" class="btn btn-primary p-2 px-3 mt-3">Submit</button>
+                </div>
+        </form>
+    </div>
+    </div>
+    <script>
+      
+  $('.yes-btn').on('click', function(){
+            // Append content to the div
+            $('.response-div').empty();
+            $('.response-div').append("<h5>Hehe that's good for your life</h5>");
+            $('.form-div').css('display', 'block');
+        });
+        
+        $('.no-btn').on('click', function(){
+            // Append content to the div
+            $('.response-div').empty();
+
+            $('.response-div').append("<h5>Fuck you bitchhhhh</h5>");
+        });
+
+        $('.click-btn').on('click', function(){
+            // Append content to the div
+
+            $('.forms').css('display', 'block');
+        });
+        $('#webForm').on('submit', function (event) {
+    var $anniversaryDateAnswer = '2020-02-16';
+    var $birthDateAnswer = '2003-11-10';
+    var $firstKissDateAnswer = '2020-05-27';
+    var $lastKissDateAnswer = '2024-01-11';
+    var $firstMovieDateAnswer = '2022-02-15';
+    var $mark = 0;
+
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Get values from the form
+    var anniversaryDate = $('#name').val();
+    var dob = $('#dob').val();
+    var kissFirstDate = $('#kissFirst').val();
+    var lastKissDate = $('#kiss').val();
+    var movieDate = $('#movie').val();
+
+    if (anniversaryDate === $anniversaryDateAnswer) {
+        $mark++;
+    }
+    if (dob === $birthDateAnswer) {
+        $mark++;
+    }
+    if (kissFirstDate === $firstKissDateAnswer) {
+        $mark++;
+    }
+    if (lastKissDate === $lastKissDateAnswer) {
+        $mark++;
+    }
+    if (movieDate === $firstMovieDateAnswer) {
+        $mark++;
+    }
+
+    console.log($mark);
+    $('.whole-container').empty();
+
+    if ($mark === 5) {
+        $('.whole-container').append("<h3>Your mark is " + $mark + "</h2><h5>Awwww Good job Settttt : )</h2>");
+    } else if ($mark === 0) {
+        $('.whole-container').append("<h3>Your mark is " + $mark + "<h1>LET'S BREAK UPPPPPPP</h1>");
+
+    } else if($mark == 1){
+        $('.whole-container').append("<h3>Your mark is " + $mark + "<h3>fAAAAAAAAAAAAAKE!!!! Very Bad</h3>");
+
+    }
+      else {
+        $('.whole-container').append("<h3>Your mark is " + $mark + "<h3>Ohoh You got something wrong</h3>");
+    }
+
+});
+
+        
+        </script>
+        
+</body>
+</html>
